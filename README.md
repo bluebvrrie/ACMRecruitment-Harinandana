@@ -1,4 +1,4 @@
-# ACMRecruitment-project(readme-update)
+#ACMRecruitment conflict resolved.
 I am Harinandana, a first year btech student in CSE-AI.
 This repository is created as part of the ACM recruitment process.  
 It contains my tasks, solutions, and resources related to the recruitment activities.  
