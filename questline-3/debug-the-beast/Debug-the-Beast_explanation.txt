@@ -1,0 +1,8 @@
+Code: largest = second = -9999999
+New code: largest = second = float('-inf')
+Explanation: if we input no less than -9999999 the code wouldn't work.
+
+Code:  elif num > second:
+New code:  elif num > second and num!=largest:
+Explanation: if duplicates of the largest no: is in there, then second largest will also be given to that no:
+New code checks if the no: is equal to the largest no: thus preventing duplicate no: to be taken.
