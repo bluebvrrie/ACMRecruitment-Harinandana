@@ -1,0 +1,16 @@
+Initial input:
+- -   3   -
+- 3   -   1
+3  -   -   -
+- 1   -   -
+Initially, we have 3 at positions (row,column): (1,3) (2,2) (3,1); so the only position 3 in 4th row can take is (4,4).
+We have 1 at positions:(2,4) and (4,2) ; so the only position 1 can take at 3rd row is (3,3). Therefore at 1st row 1 must be on (1,1).
+If we put 2 in (2,1); 4 will be on (4,1) and (2,3).Hence 2 will be on (4,3). 
+Since each square(2x2) must have all 4 no:s, 4 will on (1,2). Thus 2 will be on (1,4) and (3,2). Therefore 4 will be on (3,4).
+
+Final output:
+1   4   3   2
+2   3   4   1
+3   2   1   4
+4   1   2   3
+
