@@ -1,0 +1,52 @@
+Code:
+num=list(map(int,input("enter no:s with space in btw ").split()))
+                        # input func asks the user for no:s 
+                            #map will map the input as integers
+                            #split will help regard them as integers and not as string. And will not make errors if space is read in between
+                           #list func makes them into a list
+n=len(num)    #calculates how many no:s are entered
+for i in range(n):
+    for j in range(0,n-i-1):
+        if num[j] > num[j+1]:
+            a= num[j]
+            num[j]= num[j+1]
+            num[j+1]= a
+                                    # range (0,n-i-1) makes value of j from 0 to the 2nd last element, or the element before the sorted element each time.
+                                            And checks if the 1st element is greater than the 2nd.If it is they are immediately swapped correctly.
+                                     #As each turn completes the last element gets sorted   
+                                     # it runs till the 1st element is sorted                  
+print("Sorted array:",num)
+               
+TraceTable:
+eg: num=[3,7,2,9]
+Step1:
+ When i=0,    range of j=(0,4-0-1)=(0,3)
+      When j=0, num[0]=3, num[1]=7
+                            3>7 is false
+Therefore remains as such
+         When j=1, num[1]=7, num[2]=2
+                                 7>2 is true
+Therefore,    num[1]=2 and num[2]=7
+        Hence 7 got sorted
+Step2:
+ When i=1,    range of j=(0,4-1-1)=(0,2)
+      When j=0, num[0]=3, num[1]=2
+                            3>2 is true
+Therefore,    num[0]=2 and num[1]=3
+         When j=1, num[1]=3, num[2]=7
+                                 3>7 is false
+Therefore, no change
+        Hence 3 got sorted
+Step3:
+ When i=2,    range of j=(0,4-2-1)=(0,1)
+      When j=0, num[0]=2, num[1]=3
+                            2>3 is false
+Therefore,    no change
+         Hence all are sorted.
+
+FINAL OUTPUT PRINTED:
+Sorted array:  [2, 3, 7, 9]
+
+ 
+
+ 
