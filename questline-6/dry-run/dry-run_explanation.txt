@@ -1,0 +1,61 @@
+
+Manually trace the execution of a given pseudocode snippet to predict its output.
+A = 5
+B = 3
+SUM = 0
+print("Initial: A =", A, ", B =", B, ", SUM =", SUM)
+for i in range(1, B + 1):
+    print(f"\nStep {i}:")
+    print("Before: SUM =", SUM)
+    SUM = SUM + A
+    print(f"Operation: SUM = SUM + A ? {SUM}")
+print("\nFinal Output:", SUM)
+
+TraceTable:
+
+1. It will print:
+Initial: A = 5 , B = 3 , SUM = 0
+2. Loop will run from (1,B+1) so from i=1 to 3(since loop ends 1 no: before last range, here :4)
+3. When i=1
+It will print:
+Step 1:
+Before: SUM = 0
+4. Then it will execute: SUM=SUM+A Therefore: SUM= 0+5=5
+It will print:
+Operation: SUM = SUM + A ?5
+5. When i=2
+It will print:
+Step 2:
+Before: SUM=5
+6. Then it will execute: SUM=SUM+A Therefore: SUM= 5+5=10
+It will print:
+Operation: SUM = SUM + A ?10
+7. When i=3
+It will print:
+Step 3:
+Before: SUM=10
+8. Then it will execute: SUM=SUM+A Therefore: SUM= 10+5=15
+It will print:
+Operation: SUM = SUM + A ?15
+9. It will print:
+Final Output: 15
+
+
+Final output printed:
+
+Initial: A = 5 , B = 3 , SUM = 0
+
+Step 1:
+Before: SUM = 0
+Operation: SUM = SUM + A ?5
+
+Step 2:
+Before: SUM=5
+Operation: SUM = SUM + A ?10
+
+Step 3:
+Before: SUM=10
+Operation: SUM = SUM + A ?15
+
+Final Output: 15
+
