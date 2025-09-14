@@ -1,0 +1,17 @@
+Iterative Method:
+Using for loop
+Code:
+a=input("enter a string ")  #asks the user to enter a string
+r="" #creates an empty string
+for ch in a:  #takes each letter in the string and executes
+    r=ch+r  #adds each letter before the previous letter in r.Thus reversing it.
+print("reversed string is",r)
+
+Recursive Method:
+def rev(b):    #calls function (dev) and b is the parameter
+    if b=="" or len(b)==1:  #this is the base condition on which the code runs
+                                                #it checks if the string has 1  or no letters. If this                                                                                 condition is not present, the loop will run infinitely.  
+              return b                  #If it has only one letter it will return as such.                                                                                            
+    return rev(b[1:])+b[0]  
+                                                          #if it has more than 1 letters, letters from 1st                             position(2nd letter) to the end will get added to the 1st letter. As it keeps running, the beginning letter keeps on adding to the end. Thus reversing the string.
+print (rev(input("enter a string ")))
