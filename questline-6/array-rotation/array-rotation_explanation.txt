@@ -1,0 +1,20 @@
+CODE:
+num=list(map(int,input("enter no: with sapce in btw ").split()))
+print("num=",num)
+k=int(input("enter a no:"))
+num=num[-k:]+num[:-k]
+print("rotated array is ",num)
+
+EXPLANATION:
+num=list(map(int,input("enter no: with sapce in btw ").split()))
+                            #map(function,iterable) is used to make all the elements as integers.  
+                           #.split() is used to properly split the integers, or space will also be taken into account ,    making an error since it is not int.
+                          #list is used to make the no: into a list.
+print("num=",num)         #prints the entered no:s as a list
+k=int(input("enter a no:"))  #asks user to enter how many place to rotate
+num=num[-k:]+num[:-k]     
+                                                      #num[-k:] gets all the last k elements                                     
+                                                                  #   num[:-k]gets all the elements except last k elements.
+                                                                  # then adds the last k elements before the others ,                                                         thus making k right rotations 
+print("rotated array is ",num)   #prints the rotated array
+
