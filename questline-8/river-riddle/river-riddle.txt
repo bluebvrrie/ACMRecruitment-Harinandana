@@ -1,0 +1,17 @@
+Task:
+A farmer is traveling with a wolf, a goat, and a cabbage. They need to cross a river using a boat that can only carry the farmer and one item at a time.
+However, certain items cannot be left together without the farmer:
+* If the wolf and the goat are left together, the wolf will eat the goat.
+* If the goat and the cabbage are left together, the goat will eat the cabbage.
+The farmer must plan the sequence of crossings carefully so that nothing gets eaten.
+
+Explanation:
+Step 1: The farmer will take the goat with him and put him ashore
+Step 2: The farmer will come back alone.
+Step3: The farmer will take wolf with him and put him ashore.
+Step4: The farmer will bring goat back with him.
+Step5: The farmer will keep the goat there and take the cabbage with him.
+Step6: The farmer will put cabbage ashore.
+Step 6: The farmer will come back alone
+Step7: The farmer will take the goat to the other side.
+ All 3 are reached safely.
