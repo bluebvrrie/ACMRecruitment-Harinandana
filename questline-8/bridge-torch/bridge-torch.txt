@@ -1,0 +1,18 @@
+Task:
+Four people need to cross a narrow bridge at night, with only one torch. The torch is required for crossing. The four people take 1, 2, 7, and 10 minutes respectively to cross. The bridge can hold at most two people at a time, and when two people cross together, they must move at the pace of the slower person. If there are still people on the original side, someone must bring the torch back.
+the optimal crossing sequence, total time, and your reasoning.
+
+Answer: 
+Total time=17 mins
+
+Crossing sequence:
+Step1: 1 and 2 goes first  [2 makes 1 slow ,time=2min, total time= 2min]
+Step2: 1 returns [time=1min, total=2+1=3min]
+Step3: 7 and 10 goes .[10 slows down 7,time =10min. Therefore, total=3+10=13]
+Step4: 2 returns [time=2min, total=13+2=15]
+Step5: 1 and 2 goes [time=2min , total=15+2=17]
+Hence total time taken =17min.
+
+Explanation:
+It is better to make the slow people go together to get better management
+of time. Similarly fast people are paired together to get better use of their speed. Fast people are also used to return the torch since time is taken less by them. Any other pairing makes the total greater than 17.So this is the best pairing.
