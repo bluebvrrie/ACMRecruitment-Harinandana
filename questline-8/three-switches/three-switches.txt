@@ -1,0 +1,14 @@
+                               Three Switches, One Bulb
+Task:
+Devise a strategy to determine which of the three switches controls a bulb in another room, entering the room only once.
+
+Step 1: switch on one of the lights for some time. Take it A
+Step 2:switch on another light .Take it as B
+Step 3: switch off the other(A)
+Step 4: enter the room
+Step 5: touch and feel the turned off lights. Notice which one is hot.
+Findings: 
+1: The turned on light's corresponding switch will be B.
+2: The hot bulb will have the switch marked as A.                                             Since current causes heating effect.
+3: The other turned off bulb will have the 3rd , unmarked switch.
+
