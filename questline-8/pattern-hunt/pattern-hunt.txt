@@ -1,0 +1,25 @@
+                                   Pattern Hunt
+Find the next two terms in the sequence:
+2, 6, 12, 20, ...
+
+Answer: 30, 42
+
+Two ways:
+Method 1:
+1st element is 2
+6 is produced by adding 4 to 2
+12 is produced by adding 6 to 6.
+20 is produced by adding 8 to 12.
+Here we see a pattern that is: the increment keeps on getting added by 2 and that no: is added to the previous no:
+Therefore, next no: is produced by adding 10 to 20 = 30
+And next by adding 12 to 30 =42
+
+Method 2:
+They are the products of 2 consecutive no:s of natural no: 
+1x2 =2
+2x3=6
+3x4=12
+4x5=20
+Therefore the next 2 terms would be:
+5x6= 30
+6x7= 42
